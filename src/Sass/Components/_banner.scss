@@ -1,0 +1,19 @@
+.custom {
+    height: 224px;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    background-color: #00000050;
+
+
+    &__text {
+        font-weight: 500; 
+        font-size: 48px;
+        color: #FFFFFF;
+        // margin: 0;
+        // padding-top: 75px;
+
+     }
+}
+

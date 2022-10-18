@@ -1,0 +1,9 @@
+Base = fichiers fondations, police caractères, normes à appliquer sur tout site comme box-sizing
+Utils = variables, fonctions, mixins et les placeholders (pr extension)
+Layout = blocs BEM (contient ce qui est réutilisable), comme header, footer, formulaires
+Components = blocs BEM plus indépendants (boutons)
+Pages = contient blocs de code qui s'appliquent qu'à une seule page, règles spécifiques à 1 seule 
+page et pas réutilisées ailleurs
+Themes = code thématique (Noël,Halloween)
+Vendors = feuilles de styles externes comme Bootstrap ou jQuery UI. S'utilise pour tout css venant
+de l'extérieur

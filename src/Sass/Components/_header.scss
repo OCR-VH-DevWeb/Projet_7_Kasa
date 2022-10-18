@@ -1,0 +1,32 @@
+// @import background from '../assets/Home.png';
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    &__nav {
+        width: 300px;
+        text-decoration: none;
+    }
+        &__menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            font-weight: 500;
+            li:hover {
+                border-bottom: solid 2px #FF6060;
+            }
+            .link {
+                text-decoration-line: none;
+                color: #FF6060;
+            }
+            .line {
+                border-bottom: 2px solid transparent;
+            }
+        }
+}
+
+
+
