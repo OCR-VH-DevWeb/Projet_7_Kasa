@@ -1,12 +1,11 @@
-// @import background from '../assets/Home.png';
-
-
 .header {
+    // width: 1240px;
+    // height: 68px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
     &__nav {
-        width: 300px;
+        width: 309px;
         text-decoration: none;
     }
         &__menu {
@@ -15,16 +14,19 @@
             justify-content: space-between;
             font-size: 24px;
             font-weight: 500;
+
             li:hover {
                 border-bottom: solid 2px #FF6060;
             }
-            .link {
-                text-decoration-line: none;
-                color: #FF6060;
-            }
+            
             .line {
                 border-bottom: 2px solid transparent;
             }
+
+            .line > a {
+                text-decoration: none;
+                color: #FF6060;
+                }
         }
 }
 

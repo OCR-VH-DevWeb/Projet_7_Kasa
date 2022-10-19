@@ -26,8 +26,11 @@ body, html {
   border-radius: 25px;
   margin-top: 20px;
   display: flex;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3137254902);
+  justify-content: center;
+  align-items: center;
+}
+.custom img {
+  border-radius: 25px;
 }
 .custom__text {
   font-weight: 500;
@@ -81,7 +84,7 @@ body, html {
   margin-bottom: 35px;
 }
 .header__nav {
-  width: 300px;
+  width: 309px;
   text-decoration: none;
 }
 .header__menu {
@@ -94,12 +97,12 @@ body, html {
 .header__menu li:hover {
   border-bottom: solid 2px #FF6060;
 }
-.header__menu .link {
-  text-decoration-line: none;
-  color: #FF6060;
-}
 .header__menu .line {
   border-bottom: 2px solid transparent;
+}
+.header__menu .line > a {
+  text-decoration: none;
+  color: #FF6060;
 }
 
 .footer {
