@@ -6,7 +6,8 @@ import Card from "../components/Card";
 
 
 function Home() {
-  return (<div>
+  return (
+  <div>
     <Banner image={Image} text="Chez vous, partout et ailleurs" />
       <div className='container'>
         <ul className="product">

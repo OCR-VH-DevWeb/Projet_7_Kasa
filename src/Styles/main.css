@@ -22,29 +22,70 @@ body, html {
 }
 
 .custom {
-  height: 224px;
+  height: 223px;
   border-radius: 25px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.custom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #000000, #000000);
+  opacity: 0.4;
+  border-radius: 25px;
 }
 .custom img {
   border-radius: 25px;
+  width: 100%;
+  height: 100%;
 }
 .custom__text {
   font-weight: 500;
   font-size: 48px;
   color: #FFFFFF;
+  position: absolute;
+  z-index: 3;
 }
 
-.card {
+.container {
+  width: 100%;
+  margin: 45px 0 45px 0;
+  padding: 56px 50px 0 50px;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+}
+.container .product {
+  margin: 0;
+}
+.container li {
+  height: 340px;
+  margin-bottom: 50px;
+}
+.container .card {
   width: 340px;
   height: 340px;
   position: relative;
   margin-bottom: 50px;
 }
-.card .title {
+.container .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(360deg, #000000 50%, #FFFFFF);
+  opacity: 0.4;
+  border-radius: 10px;
+}
+.container .card .title {
   font-weight: 500;
   font-size: 18px;
   color: white;
@@ -54,20 +95,13 @@ body, html {
   right: 0px;
   left: 20px;
   border-radius: 10px;
+  z-index: 1;
 }
-.card .vew {
+.container .card .vew {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.container {
-  width: 100%;
-  margin-top: 45px;
-  padding: 56px 50px;
-  background-color: #F7F7F7;
-  border-radius: 25px;
 }
 
 .product {
@@ -79,6 +113,7 @@ body, html {
 }
 
 .header {
+  height: 68px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -108,20 +143,24 @@ body, html {
 .footer {
   background-color: black;
   color: white;
-  height: 173px;
-  padding: 25px;
+  width: 100%;
+  height: 209px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  left: 0;
 }
 .footer__logo {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .footer__logo__logo__white {
   color: white;
 }
 .footer__mention {
+  height: 46px;
   font-weight: 500;
   font-size: 24px;
   margin: 0;

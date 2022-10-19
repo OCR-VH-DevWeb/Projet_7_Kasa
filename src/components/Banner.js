@@ -1,4 +1,4 @@
-
+import React from "react"
 
 function Banner(props) {
     return (
@@ -6,7 +6,6 @@ function Banner(props) {
             <img src={props.image} alt="Paysage naturel en fond"></img>
             <p className="custom__text">{props.text}</p>
         </div>
-
     )
 }
 
