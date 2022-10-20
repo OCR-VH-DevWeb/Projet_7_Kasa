@@ -14,17 +14,16 @@ import FicheLogement from './Pages/Fichelogement'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-
 //ce qui est commun à toutes les pages
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/product/:idProduct" element={<FicheLogement />}/>
-        <Route path="/*" element={<Error404 />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/product/:idProduct" element={<FicheLogement />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
     </div>

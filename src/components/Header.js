@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/Logo.png'
-// import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -28,14 +27,3 @@ function Header() {
 }
 
 export default Header
-
-// {/* <a href="../Pages/Home"></a>
-// <a href='../Pages/About'></a> */}
-
-// {/* <a className="link">
-// <li className='line'><Link to="/">Accueil</Link></li>
-// </a>
-// <a className="link" href="./Pages/About">
-// <li className='line'>&Agrave; propos</li>
-// </a> */}
-// {/* <Link to="/">Accueil</Link> */}
