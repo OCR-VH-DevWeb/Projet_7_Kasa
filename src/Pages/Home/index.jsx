@@ -1,7 +1,7 @@
-import Banner from '../components/Banner'
-import Image from '../assets/Home.png'
-import Accomodations from '../datas/products.json'
-import Card from '../components/Card'
+import Banner from '../../components/Banner'
+import Image from '../../assets/Home.png'
+import Accomodations from '../../datas/products.json'
+import Card from '../../components/Card'
 // import Product from "../components/Product";
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
         <ul className="product">
           {Accomodations.map((Accomodation) => (
             <li key={Accomodation.id}>
-              <Card title={Accomodation.title} cover={Accomodation.cover} />
+              <Card cover={Accomodation.cover} title={Accomodation.title}/>
             </li>
           ))}
         </ul>
@@ -21,5 +21,3 @@ function Home() {
   )
 }
 export default Home
-
-//  ReactDOM.render(<div><Header /><Banner /></div>, document.getElementById('root'))

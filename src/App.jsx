@@ -7,10 +7,10 @@
 import { Routes, Route } from 'react-router-dom'
 
 import './Styles/main.css'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Error404 from './Pages/Error404'
-import FicheLogement from './Pages/Fichelogement'
+import Home from './pages/Home'
+import About from './pages/About'
+import Error404 from './pages/Error404'
+import FicheLogement from './pages/Fichelogement'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
