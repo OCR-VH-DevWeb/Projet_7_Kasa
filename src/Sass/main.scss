@@ -1,3 +1,11 @@
+// // Utils
+@import "./Utils/variables";
+// @import "./Utils/functions";
+// @import "./Utils/mixins";
+// @import "./Utils/extensions";
+
+// // Vendors
+
 //Base
 @import "./Base/base";
 @import "./Base/typography";
@@ -10,14 +18,6 @@
 @import "./Components/footer";
 @import "./Components/collapse";
 
-
-// // Utils
-@import "./Utils/variables";
-// @import "./Utils/functions";
-// @import "./Utils/mixins";
-// @import "./Utils/extensions";
-
-// // Vendors
 
 // // Layout
 // @import "./Layout/header";

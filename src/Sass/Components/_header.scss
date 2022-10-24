@@ -13,19 +13,16 @@
             justify-content: space-between;
             font-size: 24px;
             font-weight: 500;
-
-            li:hover {
-                border-bottom: solid 2px #FF6060;
-            }
-            
             .line {
                 border-bottom: 2px solid transparent;
             }
-
             .line > a {
                 text-decoration: none;
-                color: #FF6060;
-                }
+                color: $color_main;
+            }
+            a:focus{
+                text-decoration: underline $color_main;
+            }
         }
 }
 

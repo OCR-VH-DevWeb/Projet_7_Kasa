@@ -22,3 +22,10 @@ body
     padding: 40px 100px 0px 100px;
     margin: auto;
 }
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $color_main;
+}
