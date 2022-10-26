@@ -7,21 +7,20 @@
     box-sizing: border-box;
 }
 
-body > :not(.container-loader) 
-{
-//    min-width: 375px;
-//    margin: auto;
-    .container-loader
-    {
-        width: 100%;
-    }
-}
 body
 {
     max-width: 1440px;
+    min-width: 375px;
     padding: 40px 100px 0px 100px;
     margin: auto;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+            padding: 40px 50px 0px 50px};
+    @media screen and (max-width: map-get($breakpoints , inter)) {
+        padding: 40px 20px 0px 20px};
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+            padding: 20px};
 }
+
 li{
     list-style: none;
 }

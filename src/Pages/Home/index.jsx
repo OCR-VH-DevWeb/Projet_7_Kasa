@@ -1,8 +1,7 @@
-import Banner from '../../components/Banner'
+import Banner from '../../components/Banner/index'
 import Image from '../../assets/Home.png'
 import Accomodations from '../../datas/products.json'
-import Card from '../../components/Card'
-// import Product from "../components/Product";
+import Card from '../../components/Card/index'
 
 function Home() {
   return (
@@ -12,7 +11,7 @@ function Home() {
         <ul className="product">
           {Accomodations.map((Accomodation) => (
             <li key={Accomodation.id}>
-              <Card cover={Accomodation.cover} title={Accomodation.title}/>
+              <Card cover={Accomodation.cover} title={Accomodation.title} id={Accomodation.id} />
             </li>
           ))}
         </ul>

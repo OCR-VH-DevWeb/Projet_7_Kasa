@@ -1,7 +1,7 @@
 // import du Hook { useState }
 import React, { useState } from 'react';
-import Arrow from "../assets/Arrowcoll.png";
-import Arrowup from "../assets/ArrowUpcoll.png";
+import Arrow from "../../assets/Arrowcoll.png";
+import Arrowup from "../../assets/ArrowUpcoll.png";
 
 
 

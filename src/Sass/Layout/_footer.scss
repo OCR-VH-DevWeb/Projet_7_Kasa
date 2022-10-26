@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color_black;
+  color: $color_white;
+  width: 100%;
+  height: 209px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  &__logo {
+    margin-top: 50px;
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      margin-top: 50px;
+    }
+  }
+  &__mention {
+    height: 46px;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}

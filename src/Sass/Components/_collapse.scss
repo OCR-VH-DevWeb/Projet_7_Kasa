@@ -1,11 +1,10 @@
 .wrapper {
-    width: 1023px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 50px 0px 50px 0px;
 
     .heading {
         width: 100%;
@@ -30,6 +29,7 @@
             border: none;
             background-color: transparent;
             margin-top: 5px;
+            cursor: pointer;
         }
     }
 }

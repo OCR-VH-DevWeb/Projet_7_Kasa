@@ -1,4 +1,5 @@
 .global {
+    height: 973px;
     color: $color_main;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
     .message {
         width: 872px;
         height: 51px;
+        margin-bottom: 91px;
         font-weight: 500;
         font-size: 36px;
     }
@@ -19,10 +21,11 @@
         text-decoration: none;
     }
     .backhome {
+        width: 285px;
+        margin-top: 91px;
         font-weight: 500;
         font-size: 18px;
         border-bottom: 2px solid transparent;        
-        width: 285px;
         color: $color_main;
         &:hover {
             border-bottom: solid 2px $color_main;

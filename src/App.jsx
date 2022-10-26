@@ -10,7 +10,7 @@ import './Styles/main.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Error404 from './pages/Error404'
-import FicheLogement from './pages/Fichelogement'
+import Product from './pages/Product'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/product/:idProduct" element={<FicheLogement />} />
+        <Route path="/product/:idProduct" element={<Product />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />

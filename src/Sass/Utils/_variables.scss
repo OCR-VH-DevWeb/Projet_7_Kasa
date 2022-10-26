@@ -7,8 +7,12 @@ $color_background: #F7F7F7;
 
 $breakpoints: (
     max: 1440px,
-    tablette: 992px,
-    mobile: 575
+    tablette: 993px,
+    inter: 880px,
+    premobile: 769px,
+    mobile: 575px,
 );
+
+
 // @media (max-width: 599px) {
 // }

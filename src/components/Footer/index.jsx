@@ -1,4 +1,4 @@
-import logo from '../assets/Logowhite.png'
+import logo from '../../assets/Logowhite.png'
 import React from 'react'
 
 function Footer () {

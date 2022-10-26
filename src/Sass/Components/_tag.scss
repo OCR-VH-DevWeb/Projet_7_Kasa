@@ -1,0 +1,13 @@
+.tag {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $color_main;
+
+    .tagName {
+        font-weight: 500;
+        font-size: 14px;
+        color: $color_white;
+        text-align: center;
+    }
+}

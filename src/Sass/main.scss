@@ -13,15 +13,18 @@
 // // Components
 @import "./Components/banner";
 @import "./Components/card";
-// @import "./Components/product";
-@import "./Components/header";
-@import "./Components/footer";
+@import "./Components/caroussel";
+// @import "./Components/header";
+// @import "./Components/footer";
 @import "./Components/collapse";
+@import "./Components/tag";
+@import "./Components/user";
+
 
 
 // // Layout
-// @import "./Layout/header";
-// @import "./Layout/nav";
+@import "./Layout/header";
+@import "./Layout/footer";
 // @import "./Layout/container";
 // @import "./Layout/form";
 // 
