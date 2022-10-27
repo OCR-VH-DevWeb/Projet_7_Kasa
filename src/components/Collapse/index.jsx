@@ -33,9 +33,3 @@ console.log(isOpen);
 
 export default Collapse
 
-// {collapseState ? (
-//     <div></div>
-//   ) : (
-//     <div></div>
-//   )}
-// {dataCollapse.map((data, d) => ())}

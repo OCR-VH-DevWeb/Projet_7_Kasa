@@ -217,7 +217,7 @@ body, html {
   width: 47px;
   height: 79px;
   position: absolute;
-  top: 150px;
+  top: 165px;
   left: 0px;
   margin-left: 23px;
   background-color: transparent;
@@ -236,7 +236,7 @@ body, html {
   width: 47px;
   height: 79px;
   position: absolute;
-  top: 150px;
+  top: 165px;
   right: 0px;
   margin-right: 23px;
   background-color: transparent;
@@ -437,6 +437,7 @@ body, html {
 }
 .main .containing {
   padding: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
