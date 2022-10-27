@@ -3,7 +3,6 @@
 //"Route" utilisé pour créer une route unique avec 2 attributs :
 // "path" spécifie le chemin d'URL du composant souhaité, "element" spécifie le composant que la route doit rendre
 
-// import { Routes, Route } from "react-router-dom"
 import { Routes, Route } from 'react-router-dom'
 
 import './Styles/main.css'

@@ -1,17 +1,14 @@
-function Userprofile(host, rating) {
- return (
+function User({ name, picture }) {
+  return (
     <div className="userProfile">
-        <h2 className="userName">{host.className}</h2>
-        <img className="userAvatar" src={host.picture} alt="Avatar de profil d'utilisateur"></img>
-        <div className="UserRate">
-
-        </div>    
+      <p className="userName">{name}</p>
+      <img
+        className="userAvatar"
+        src={picture}
+        alt="Avatar de profil d'utilisateur"
+      ></img>
     </div>
-    
- )
+  )
 }
 
-
-
-
-export default Userprofile
+export default User

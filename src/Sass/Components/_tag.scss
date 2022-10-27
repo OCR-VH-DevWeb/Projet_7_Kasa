@@ -1,13 +1,15 @@
 .tag {
-    width: 115px;
+  display: flex;
+  flex-wrap: wrap;
+  .tagName {
     height: 25px;
-    border-radius: 10px;
+    padding: 3px 25px 0px 25px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color_white;
     background-color: $color_main;
-
-    .tagName {
-        font-weight: 500;
-        font-size: 14px;
-        color: $color_white;
-        text-align: center;
-    }
+    border-radius: 10px;
+    text-align: center;
+  }
 }

@@ -1,0 +1,27 @@
+.user {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  .userProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .userName {
+      width: 100px;
+      margin: 0;
+      padding-right: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $color_main;
+      text-align: end;
+    }
+  }
+  .userAvatar {
+    width: 70px;
+    border-radius: 50px;
+    background-color: $color_background;
+    border: solid 2px $color_background;
+  }
+}

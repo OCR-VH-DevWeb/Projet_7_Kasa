@@ -1,35 +1,41 @@
 // import du Hook { useState }
-import React, { useState } from 'react';
-import Arrow from "../../assets/Arrowcoll.png";
-import Arrowup from "../../assets/ArrowUpcoll.png";
+import React, { useState } from 'react'
+import Arrow from '../../assets/Arrowcoll.png'
+import Arrowup from '../../assets/ArrowUpcoll.png'
 
-
-
-
-function Collapse({category, content}) {
+function Collapse({ category, content }) {
   // déclare une nouvelle variable d'état en appelant useState()
   //renvoie une paire de valeurs et initialise à null comme argument
   //second élément renvoyé est une fonction qui permet de modifier la variable isOpen
-    const [isOpen, setIsOpen] = useState(null);
-    //change le state 
-    const stateOpen = () => setIsOpen(!isOpen);
-console.log(isOpen);
-    return (
-        <div className='wrapper'>
-            <div className='heading'>
-                <div className='title'>{category}</div>
-                <button className='dropdown' onClick={stateOpen}>
-                    <img src={isOpen ?  Arrowup : Arrow} alt="Flèche pour afficher le texte"></img>
-                </button>    
-            </div>
-            {isOpen ? (
-                 <div className='description'>{content}</div>
-            ) : 
-                null
-            }
-        </div>
-    ) 
+  const [isOpen, setIsOpen] = useState(null)
+  //change le state
+  const stateOpen = () => setIsOpen(!isOpen)
+  const contentProduct = Array.isArray(content) ? (
+    <ul>
+      {content.map((element) => (
+        <li key={element}>{element}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>{content}</p>
+  )
+
+  console.log(isOpen)
+
+  return (
+    <div className="wrapper">
+      <div className="heading">
+        <div className="title">{category}</div>
+        <button className="dropdown" onClick={stateOpen}>
+          <img
+            src={isOpen ? Arrowup : Arrow}
+            alt="Flèche pour afficher le texte"
+          ></img>
+        </button>
+      </div>
+      {isOpen ? <div className="description"> {contentProduct}</div> : null}
+    </div>
+  )
 }
 
 export default Collapse
-

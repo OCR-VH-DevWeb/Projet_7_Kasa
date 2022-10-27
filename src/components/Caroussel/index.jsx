@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
-import { useState } from 'react'
+import React, { useState } from 'react'
+// import { useState } from 'react'
 import Arrowleft from '../../assets/ArrowLeft.png'
 import Arrowright from '../../assets/ArrowRight.png'
 
@@ -28,6 +28,7 @@ function Caroussel({ pictures }) {
         ></img>
       </button>
     )
+  //constante qui permet de ne pas afficher le bouton next si le nombre total de photos est égal à 1
   const visibleButtonRight =
     totalPictures === 1 ? null : (
       <button className="right" onClick={next}>
@@ -37,6 +38,7 @@ function Caroussel({ pictures }) {
         ></img>
       </button>
     )
+  //constante qui permet de ne pas afficher le compteur de pages si le nombre total de photos est égal à 1
   const visibleCountPages =
     totalPictures === 1 ? null : (
       <div className="count">

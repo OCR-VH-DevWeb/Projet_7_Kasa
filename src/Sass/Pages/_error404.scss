@@ -3,25 +3,36 @@
     color: $color_main;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    .main {
-        width: 597px;
+    .object {
+        // width: 597px;
         height:263px;
         font-weight: 700;
         font-size: 288px;
-    }
+        @media screen and (max-width: map-get($breakpoints , tablette)) {
+            font-size: 192px};
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+            font-size: 96px};
+   }
     .message {
-        width: 872px;
+        // width: 872px;
         height: 51px;
         margin-bottom: 91px;
         font-weight: 500;
         font-size: 36px;
+        text-align: center;
+        @media screen and (max-width: map-get($breakpoints , tablette)) {
+            font-size: 27px};
+
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+            font-size:18px};
     }
     .linkback {
         text-decoration: none;
     }
     .backhome {
-        width: 285px;
+        // width: 285px;
         margin-top: 91px;
         font-weight: 500;
         font-size: 18px;
@@ -30,5 +41,7 @@
         &:hover {
             border-bottom: solid 2px $color_main;
         }
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+            font-size:14px};
     }
 }

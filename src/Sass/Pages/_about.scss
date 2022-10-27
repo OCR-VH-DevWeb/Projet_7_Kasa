@@ -1,9 +1,23 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .containing {
-        padding: 0;
-        width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .containing {
+    width: 100%;
+    padding: 0px 100px;
+    
+    @media screen and (max-width: map-get($breakpoints , tablette)) {
+      padding: 0};
+      .title {
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+          font-size: 13px};
+      }
+      .description {
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+          font-size:12px};
+      }
+    
+    
+  }
 }

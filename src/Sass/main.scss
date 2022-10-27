@@ -1,5 +1,5 @@
 // // Utils
-@import "./Utils/variables";
+@import './Utils/variables';
 // @import "./Utils/functions";
 // @import "./Utils/mixins";
 // @import "./Utils/extensions";
@@ -7,30 +7,29 @@
 // // Vendors
 
 //Base
-@import "./Base/base";
-@import "./Base/typography";
+@import './Base/base';
+@import './Base/typography';
 
 // // Components
-@import "./Components/banner";
-@import "./Components/card";
-@import "./Components/caroussel";
-// @import "./Components/header";
-// @import "./Components/footer";
-@import "./Components/collapse";
-@import "./Components/tag";
-@import "./Components/user";
-
-
+@import './Components/banner';
+@import './Components/card';
+@import './Components/caroussel';
+@import './Components/identifyProduct';
+@import './Components/rating';
+@import './Components/collapse';
+@import './Components/tag';
+@import './Components/user';
 
 // // Layout
-@import "./Layout/header";
-@import "./Layout/footer";
+@import './Layout/header';
+@import './Layout/footer';
 // @import "./Layout/container";
 // @import "./Layout/form";
-// 
+//
 
 // // Pages
-@import "./Pages/error404";
-@import "./Pages/about";
+@import './Pages/error404';
+@import './Pages/about';
+@import './Pages/product';
 
 // Themes

@@ -1,18 +1,12 @@
-$color_main: #FF6060;
+$color_main: #ff6060;
 $color_black: #000000;
-$color_white: #FFFFFF;
-$color_background: #F7F7F7;
-
-
+$color_white: #ffffff;
+$color_background: #f7f7f7;
 
 $breakpoints: (
-    max: 1440px,
-    tablette: 993px,
-    inter: 880px,
-    premobile: 769px,
-    mobile: 575px,
+  max: 1440px,
+  tablette: 993px,
+  inter: 880px,
+  premobile: 769px,
+  mobile: 575px,
 );
-
-
-// @media (max-width: 599px) {
-// }
