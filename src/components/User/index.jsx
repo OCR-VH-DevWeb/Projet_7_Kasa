@@ -1,3 +1,5 @@
+import React from 'react'
+
 function User({ name, picture }) {
   return (
     <div className="userProfile">

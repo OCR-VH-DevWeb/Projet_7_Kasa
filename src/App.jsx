@@ -6,7 +6,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import './Styles/main.css'
-import Home from './pages/Home'
+import Home from './pages/Home/'
 import About from './pages/About'
 import Error404 from './pages/Error404'
 import Product from './pages/Product'

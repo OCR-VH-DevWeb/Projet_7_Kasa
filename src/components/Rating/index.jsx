@@ -1,3 +1,4 @@
+import React from 'react'
 import StarFull from '../../assets/StarFull.png'
 import StarEmpty from '../../assets/StarEmpty.png'
 

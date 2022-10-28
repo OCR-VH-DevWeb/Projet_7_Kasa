@@ -1,84 +1,88 @@
 .container {
-    width: 100%;
-    margin: 45px 0 45px 0;
-    padding: 56px 50px 0 50px;
-    background-color: $color_background;
-    border-radius: 25px;
-    @media screen and (max-width: map-get($breakpoints , inter)) {
-        padding: 28px 25px 0px 25px};
-    @media screen and (max-width: map-get($breakpoints , mobile)) {
-        padding: 0px;
-        margin: 22px 0px;
-        background-color: transparent};
-
-
-    .product {
-        margin: 0;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-        @media screen and (max-width: map-get($breakpoints , premobile)) {
-            flex-direction: column;
-            align-items: center};
-
+  width: 100%;
+  margin: 45px 0px 45px 0px;
+  padding: 56px 50px 0 50px;
+  background-color: $color_background;
+  border-radius: 25px;
+  @media screen and (max-width: map-get($breakpoints , inter)) {
+    padding: 28px 25px 0px 25px;
+  }
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    padding: 0px;
+    margin: 22px 0px;
+    background-color: transparent;
+  }
+  .product {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    @media screen and (max-width: map-get($breakpoints , premobile)) {
+      flex-direction: column;
+      align-items: center;
     }
-
     li {
-        height: 340px;
-        margin-bottom: 50px;
-        @media screen and (max-width: map-get($breakpoints , premobile)) {
-            width: 100%;
-            margin-bottom: 25px};
-        @media screen and (max-width: map-get($breakpoints , mobile)) {
-            height: 255px;
-            margin-bottom: 20px};
-    }
-
-    .card {
+      height: 340px;
+      margin-bottom: 50px;
+      @media screen and (max-width: map-get($breakpoints , premobile)) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        height: 255px;
+        margin-bottom: 20px;
+      }
+      .card {
         width: 340px;
         height: 340px;
         position: relative;
         @media screen and (max-width: map-get($breakpoints , premobile)) {
-            width: 100%};
+          width: 100%;
+        }
         @media screen and (max-width: map-get($breakpoints , inter)) {
-            height: 100%};
-    
+          height: 100%;
+        }
         &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(360deg , $color_black 50%, $color_white ); 
-            opacity: 0.40;
-            border-radius: 10px;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            360deg,
+            $color_black 50%,
+            $color_white
+          );
+          opacity: 0.4;
+          border-radius: 10px;
         }
-
-        .title {
-            width: 300px;
-            height: 52px;            
-            position: absolute;
-            top: 270px;
-            left: 20px;
-            border-radius: 10px;
-            z-index: 1;
-            font-weight: 500;
-            font-size: 18px;
-            color: $color_white;
-            margin: 0;
-            padding-right: 61px;
-            @media screen and (max-width: map-get($breakpoints , mobile)) {
-                top: 190px};
-        }
-
         .vew {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
         }
+        .title {
+          width: 300px;
+          height: 52px;
+          position: absolute;
+          top: 270px;
+          left: 20px;
+          border-radius: 10px;
+          z-index: 1;
+          margin: 0px;
+          padding-right: 61px;
+          font-weight: 500;
+          font-size: 18px;
+          color: $color_white;
+          @media screen and (max-width: map-get($breakpoints , mobile)) {
+            top: 190px;
+          }
+        }
+      }
     }
+  }
 }

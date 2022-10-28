@@ -1,14 +1,36 @@
-.wrapper {
-  //   width: 47%;
-  .heading {
-    .title {
-      font-size: 18px;
+//Caroussel, style et adaptation du style du composant importé pour media quieries page Product
+.product-collapse {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .wrapper {
+    width: 47%;
+    .description {
+      width: 100%;
+      padding: 43px 12px 53px 20px;
+      p {
+        margin: 0px;
+      }
+      ul {
+        padding: 0px;
+        margin: 0px;
+      }
     }
   }
-  .description {
-    width: 100%;
-    // padding: 40px 12px 50px 20px;
-    font-size: 18px;
-    font-weight: 400;
-  }
 }
+//product__heading, style et adaptation du style avec composant importé Tag pour media quieries page Product
+
+//User, style et adaptation du style du composant importé pour media quieries page Product
+// Rating, style et adaptation du style du composant importé pour media quieries page Product
+//   .heading {
+//     .title {
+//       font-size: 18px;
+//     }
+//   }
+//   .description {
+//     width: 100%;
+//     // padding: 40px 12px 50px 20px;
+//     font-size: 18px;
+//     font-weight: 400;
+//   }

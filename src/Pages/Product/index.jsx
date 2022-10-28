@@ -31,8 +31,10 @@ function Product() {
         <User name={product.host.name} picture={product.host.picture} />
         <Rating number={product.rating} />
       </div>
-      <Collapse category="Description" content={product.description} />
-      <Collapse category="Équipements" content={product.equipments} />
+      <div className="product-collapse">
+        <Collapse category="Description" content={product.description} />
+        <Collapse category="Équipements" content={product.equipments} />
+      </div>
     </div>
   )
 }

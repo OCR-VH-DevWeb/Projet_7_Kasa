@@ -11,13 +11,9 @@
   &__image {
     img {
       @media screen and (max-width: map-get($breakpoints , mobile)) {
-                width: 145px};
+        width: 145px;
+      }
     }
-//         
-// 
-    // img {
-    //   width: 100%;
-    // }
   }
 
   &__nav {

@@ -1,3 +1,5 @@
+import React from 'react'
+
 function Tag({ tags }) {
   return (
     <div className="tag">

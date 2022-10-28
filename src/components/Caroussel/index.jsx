@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import { useState } from 'react'
 import Arrowleft from '../../assets/ArrowLeft.png'
 import Arrowright from '../../assets/ArrowRight.png'
 

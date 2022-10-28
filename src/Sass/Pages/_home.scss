@@ -1,0 +1,32 @@
+// Banner, adaptation du style du composant importé et media quieries sur la page Home
+.custom {
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    height: 111px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  &::after {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      border-radius: 10px;
+    }
+  }
+  img {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    @media screen and (max-width: map-get($breakpoints, inter)) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 217px;
+      height: 48px;
+      left: 20px;
+      top: 2px;
+      font-size: 24px;
+    }
+  }
+}
+//Card, style et adaptation du style du composant importé pour media quieries page Home

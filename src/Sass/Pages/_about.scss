@@ -3,21 +3,53 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  .custom {
+    // height: unset;
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      height: 223px;
+    }
+  }
   .containing {
     width: 100%;
     padding: 0px 100px;
-    
     @media screen and (max-width: map-get($breakpoints , tablette)) {
-      padding: 0};
+      padding: 0px;
+    }
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      margin-top: 0px;
+    }
+
+    .wrapper {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        margin: 20px 0px 20px 0px;
+      }
+    }
+    .heading {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        padding: 0px 0px 0px 15px;
+      }
       .title {
         @media screen and (max-width: map-get($breakpoints , mobile)) {
-          font-size: 13px};
+          font-size: 13px;
+        }
       }
-      .description {
-        @media screen and (max-width: map-get($breakpoints , mobile)) {
-          font-size:12px};
+      .dropdown {
+        padding-left: 20px;
+        & > img {
+          @media screen and (max-width: map-get($breakpoints , mobile)) {
+            width: 18px;
+          }
+        }
       }
-    
-    
+    }
+    .description {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        padding: 23px 7px 52px 12px;
+        font-size: 12px;
+      }
+      p {
+        margin: 0px;
+      }
+    }
   }
 }

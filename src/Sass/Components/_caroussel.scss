@@ -1,52 +1,47 @@
 .caroussel {
-    width: 1240px;
-    height: 415px;
-    position: relative;
-
-    .left {
-        width: 47px;
-        height: 79px;
-        position: absolute;
-        top: 165px;
-        left: 0px;
-        margin-left: 23px;
-        background-color: transparent;
-        border: none;
-        img {
-            width: 100%;
-        }
+  width: 1240px;
+  height: 415px;
+  position: relative;
+  .left {
+    width: 47px;
+    height: 79px;
+    position: absolute;
+    top: 165px;
+    left: 0px;
+    margin-left: 23px;
+    background-color: transparent;
+    border: none;
+    img {
+      width: 100%;
     }
-
-    .background {
-        width: 100%;
-        border-radius: 25px;
-        height: 100%;
-        object-fit: cover;
+  }
+  .background {
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .right {
+    width: 47px;
+    height: 79px;
+    position: absolute;
+    top: 165px;
+    right: 0px;
+    margin-right: 23px;
+    background-color: transparent;
+    border: none;
+    img {
+      width: 100%;
     }
-
-    .right {
-        width: 47px;
-        height: 79px;
-        position: absolute;
-        top: 165px;
-        right: 0px;
-        margin-right: 23px;
-        background-color: transparent;
-        border: none;
-        img {
-            width: 100%;
-        }
+  }
+  .count {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    .number {
+      color: $color_white;
+      font-size: 18px;
+      font-weight: 500;
     }
-
-    .count {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        .number {
-            color: $color_white;
-            font-size: 18px;
-            font-weight: 500;
-    
-        }
-    }
+  }
 }
