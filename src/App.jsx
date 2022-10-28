@@ -6,10 +6,10 @@
 import { Routes, Route } from 'react-router-dom'
 
 import './Styles/main.css'
-import Home from './pages/Home/'
-import About from './pages/About'
-import Error404 from './pages/Error404'
-import Product from './pages/Product'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Error404 from './Pages/Error404'
+import Product from './Pages/Product'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
