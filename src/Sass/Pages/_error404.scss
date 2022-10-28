@@ -1,19 +1,15 @@
 // Style et media quieries page Error404
-
 .global {
   width: 100%;
-  height: 973px;
   color: $color_main;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin: 100px 0px 100px 0px;
   .object {
-    // width: 597px;
-    // height: 263px;
     font-weight: 700;
     font-size: 288px;
-    margin: 0px;
+    margin: 20px 30px 20px 30px;
     @media screen and (max-width: map-get($breakpoints , tablette)) {
       font-size: 192px;
     }
@@ -22,16 +18,11 @@
     }
   }
   .message {
-    // width: 872px;
-    // height: 51px;
-    margin-bottom: 90px;
     font-weight: 500;
     font-size: 36px;
-    text-align: center;
     @media screen and (max-width: map-get($breakpoints , tablette)) {
       font-size: 27px;
     }
-
     @media screen and (max-width: map-get($breakpoints , mobile)) {
       text-align: center;
       font-size: 18px;
@@ -39,10 +30,10 @@
   }
   .linkback {
     text-decoration: none;
+    margin: 50px 0px;
+    margin: 70px 0px 50px 0px;
   }
   .backhome {
-    // width: 285px;
-    margin-top: 90px;
     font-weight: 500;
     font-size: 18px;
     border-bottom: 2px solid transparent;
@@ -51,7 +42,6 @@
       border-bottom: solid 2px $color_main;
     }
     @media screen and (max-width: map-get($breakpoints , mobile)) {
-      margin-bottom: 50px;
       font-size: 14px;
     }
   }
