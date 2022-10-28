@@ -1,4 +1,61 @@
 //Caroussel, style et adaptation du style du composant importé pour media quieries page Product
+.caroussel {
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    height: 255px;
+  }
+  .left {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      top: 85px;
+      left: -30px;
+    }
+    img {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        width: 50%;
+      }
+    }
+  }
+  .right {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      top: 85px;
+      right: -30px;
+    }
+    img {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        width: 50%;
+      }
+    }
+  }
+  .count {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      visibility: hidden;
+    }
+  }
+}
+
+//product_heading, style et adaptation du style avec composants générés et importés Tag, User & Rating pour media quieries page Product
+.main-product .product-heading {
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    width: 100%;
+  }
+  &__name {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      font-size: 18px;
+    }
+  }
+  &__location {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      font-size: 14px;
+    }
+  }
+  .tagName {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      font-size: 10px;
+      padding: 6px 25px 0px 25px;
+    }
+  }
+}
+
+//Collapse, style et adaptation du style avec composant importé Tag pour media quieries page Product
 .product-collapse {
   width: 100%;
   display: flex;
@@ -19,7 +76,6 @@
     }
   }
 }
-//product__heading, style et adaptation du style avec composant importé Tag pour media quieries page Product
 
 //User, style et adaptation du style du composant importé pour media quieries page Product
 // Rating, style et adaptation du style du composant importé pour media quieries page Product

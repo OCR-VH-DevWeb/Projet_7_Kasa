@@ -14,23 +14,23 @@
 @import './Components/banner';
 @import './Components/card';
 @import './Components/caroussel';
+@import './Components/collapse';
 @import './Components/identifyProduct';
 @import './Components/rating';
-@import './Components/collapse';
 @import './Components/tag';
 @import './Components/user';
 
 // // Layout
-@import './Layout/header';
 @import './Layout/footer';
+@import './Layout/header';
 // @import "./Layout/container";
 // @import "./Layout/form";
 //
 
 // // Pages
-@import './Pages/home';
-@import './Pages/error404';
 @import './Pages/about';
+@import './Pages/error404';
+@import './Pages/home';
 @import './Pages/product';
 
 // Themes
