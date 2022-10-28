@@ -615,6 +615,7 @@ body, html {
 @media screen and (max-width: 575px) {
   .main-product .product-heading {
     width: 100%;
+    margin: 15px 0px 10px 0px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -628,9 +629,54 @@ body, html {
   }
 }
 @media screen and (max-width: 575px) {
-  .main-product .product-heading .tagName {
+  .main-product .product-heading .tag {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main-product .product-heading .tag .tagName {
+    height: 18px;
     font-size: 10px;
-    padding: 6px 25px 0px 25px;
+    padding: 2px 25px 2px 25px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .user {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .user .userProfile {
+    justify-content: flex-end;
+    width: 33%;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .user .userProfile .userName {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .user .userProfile .userAvatar {
+    width: 32px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .user .userRate {
+    width: 33%;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .user .userRate img {
+    width: 15px;
   }
 }
 
@@ -640,19 +686,55 @@ body, html {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 575px) {
+  .product-collapse {
+    margin: 20px 0px 50px 0px;
+  }
+}
 .product-collapse .wrapper {
   width: 47%;
+}
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper .heading {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper .heading .title {
+    font-size: 13px;
+  }
 }
 .product-collapse .wrapper .description {
   width: 100%;
   padding: 43px 12px 53px 20px;
 }
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper .description {
+    padding: 23px 7px 2px 12px;
+  }
+}
 .product-collapse .wrapper .description p {
   margin: 0px;
+}
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper .description p {
+    font-size: 12px;
+  }
 }
 .product-collapse .wrapper .description ul {
   padding: 0px;
   margin: 0px;
+}
+@media screen and (max-width: 575px) {
+  .product-collapse .wrapper .description ul {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

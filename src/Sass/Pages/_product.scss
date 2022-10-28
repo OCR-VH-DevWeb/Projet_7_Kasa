@@ -36,6 +36,7 @@
 .main-product .product-heading {
   @media screen and (max-width: map-get($breakpoints , mobile)) {
     width: 100%;
+    margin: 15px 0px 10px 0px;
   }
   &__name {
     @media screen and (max-width: map-get($breakpoints , mobile)) {
@@ -47,10 +48,57 @@
       font-size: 14px;
     }
   }
-  .tagName {
+  .tag {
     @media screen and (max-width: map-get($breakpoints , mobile)) {
-      font-size: 10px;
-      padding: 6px 25px 0px 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tagName {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        height: 18px;
+        font-size: 10px;
+        padding: 2px 25px 2px 25px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+//User, style et adaptation du style du composant importé pour media quieries page Product
+// Rating, style et adaptation du style du composant importé pour media quieries page Product
+
+.user {
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .userProfile {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      justify-content: flex-end;
+      width: 33%;
+      margin-bottom: 0px;
+    }
+    .userName {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        font-size: 12px;
+      }
+    }
+    .userAvatar {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        width: 32px;
+      }
+    }
+  }
+  .userRate {
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      width: 33%;
+      margin-bottom: 0px;
+    }
+    img {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        width: 15px;
+      }
     }
   }
 }
@@ -61,32 +109,45 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints , mobile)) {
+    margin: 20px 0px 50px 0px;
+  }
   .wrapper {
     width: 47%;
+    @media screen and (max-width: map-get($breakpoints , mobile)) {
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+    }
+    .heading {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        height: 30px;
+      }
+      .title {
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+          font-size: 13px;
+        }
+      }
+    }
+
     .description {
       width: 100%;
       padding: 43px 12px 53px 20px;
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        padding: 23px 7px 2px 12px;
+      }
       p {
         margin: 0px;
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+          font-size: 12px;
+        }
       }
       ul {
         padding: 0px;
         margin: 0px;
+        @media screen and (max-width: map-get($breakpoints , mobile)) {
+          font-size: 12px;
+        }
       }
     }
   }
 }
-
-//User, style et adaptation du style du composant importé pour media quieries page Product
-// Rating, style et adaptation du style du composant importé pour media quieries page Product
-//   .heading {
-//     .title {
-//       font-size: 18px;
-//     }
-//   }
-//   .description {
-//     width: 100%;
-//     // padding: 40px 12px 50px 20px;
-//     font-size: 18px;
-//     font-weight: 400;
-//   }
