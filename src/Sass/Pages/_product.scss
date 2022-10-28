@@ -67,6 +67,12 @@
 // Rating, style et adaptation du style du composant importé pour media quieries page Product
 
 .user {
+  // @media screen and (max-width: map-get($breakpoints , tablette)) {
+  //   width: 100%;
+  //   flex-direction: row-reverse;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
   @media screen and (max-width: map-get($breakpoints , mobile)) {
     width: 100%;
     flex-direction: row-reverse;
@@ -91,6 +97,12 @@
     }
   }
   .userRate {
+    @media screen and (max-width: map-get($breakpoints , tablette)) {
+      margin-right: 10px;
+    }
+    @media screen and (max-width: map-get($breakpoints , inter)) {
+      margin-right: 10px;
+    }
     @media screen and (max-width: map-get($breakpoints , mobile)) {
       width: 33%;
       margin-bottom: 0px;
