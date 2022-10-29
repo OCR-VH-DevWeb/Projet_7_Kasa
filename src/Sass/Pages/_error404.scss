@@ -27,7 +27,7 @@
       text-align: center;
       font-size: 18px;
     }
-    .mobile {
+    br {
       display: none;
       @media screen and (max-width: map-get($breakpoints , mobile)) {
         display: inline;

@@ -523,11 +523,11 @@ body, html {
     font-size: 18px;
   }
 }
-.global .message .mobile {
+.global .message br {
   display: none;
 }
 @media screen and (max-width: 575px) {
-  .global .message .mobile {
+  .global .message br {
     display: inline;
   }
 }
