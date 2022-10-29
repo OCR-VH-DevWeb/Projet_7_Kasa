@@ -37,15 +37,10 @@ function Caroussel({ pictures }) {
         ></img>
       </button>
     )
-  //constante qui permet de ne pas afficher le compteur de pages si le nombre total de photos est égal à 1
-  const visibleCountPages =
-    totalPictures === 1 ? null : (
-      <div className="count">
-        <p className="number">
-          {herePicture + 1}/{totalPictures}
-        </p>
-      </div>
-    )
+  // //constante qui permet de ne pas afficher le compteur de pages si le nombre total de photos est égal à 1
+  // const visibleCountPages =
+  //   totalPictures === 1 ? null : (
+  //   )
   console.log(herePicture)
 
   return (
@@ -57,7 +52,11 @@ function Caroussel({ pictures }) {
         alt="Visite du logement en photos"
       ></img>
       {visibleButtonRight}
-      {visibleCountPages}
+      <div className="count">
+        <p className="number">
+          {herePicture + 1}/{totalPictures}
+        </p>
+      </div>
     </div>
   )
 }

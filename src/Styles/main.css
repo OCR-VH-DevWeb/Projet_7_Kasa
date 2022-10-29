@@ -614,7 +614,12 @@ body, html {
 }
 @media screen and (max-width: 575px) {
   .caroussel .count {
-    visibility: hidden;
+    left: 48%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .caroussel .count .number {
+    font-size: 16px;
   }
 }
 

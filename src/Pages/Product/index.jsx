@@ -1,3 +1,4 @@
+import React from 'react'
 import Details from '../../datas/products.json'
 import Caroussel from '../../components/Caroussel'
 import { useParams, Navigate } from 'react-router-dom'

@@ -27,7 +27,12 @@
   }
   .count {
     @media screen and (max-width: map-get($breakpoints , mobile)) {
-      visibility: hidden;
+      left: 48%;
+    }
+    .number {
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -91,17 +96,7 @@
     }
   }
   .userRate {
-    // @media screen and (max-width: map-get($breakpoints , tablette)) {
-    //   margin-right: 10px;
-    // }
-    // @media screen and (max-width: map-get($breakpoints , inter)) {
-    //   margin-right: 23px;
-    // }
-    // @media screen and (max-width: map-get($breakpoints , premobile)) {
-    //   margin-right: 38px;
-    // }
     @media screen and (max-width: map-get($breakpoints , mobile)) {
-      // width: 33%;
       margin-bottom: 0px;
     }
     img {

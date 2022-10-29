@@ -1,3 +1,4 @@
+import React from 'react'
 import Banner from '../../components/Banner/index'
 import Image from '../../assets/About.png'
 import Collapse from '../../components/Collapse/index'
