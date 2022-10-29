@@ -1,5 +1,4 @@
 .header {
-  // height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +41,8 @@
         text-decoration: none;
         color: $color_main;
       }
-      a:focus {
+      a:hover,
+      a.active {
         text-decoration: underline $color_main;
       }
     }

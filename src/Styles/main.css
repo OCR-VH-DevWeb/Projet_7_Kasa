@@ -180,6 +180,9 @@ body, html {
   height: 415px;
   position: relative;
 }
+.caroussel button {
+  cursor: pointer;
+}
 .caroussel .left {
   width: 47px;
   height: 79px;
@@ -295,7 +298,6 @@ body, html {
 .userRate {
   display: flex;
   margin-bottom: 25px;
-  width: 43%;
   justify-content: space-between;
 }
 
@@ -316,11 +318,9 @@ body, html {
 }
 
 .user {
-  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .user .userProfile {
   display: flex;
@@ -423,7 +423,8 @@ body, html {
   text-decoration: none;
   color: #ff6060;
 }
-.header__nav .menu a:focus {
+.header__nav .menu a:hover,
+.header__nav .menu a.active {
   text-decoration: underline #ff6060;
 }
 
@@ -673,30 +674,15 @@ body, html {
     width: 32px;
   }
 }
-@media screen and (max-width: 993px) {
-  .user .userRate {
-    margin-right: 10px;
-  }
-}
-@media screen and (max-width: 880px) {
-  .user .userRate {
-    margin-right: 23px;
-  }
-}
-@media screen and (max-width: 769px) {
-  .user .userRate {
-    margin-right: 38px;
-  }
-}
 @media screen and (max-width: 575px) {
   .user .userRate {
-    width: 33%;
     margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 575px) {
   .user .userRate img {
     width: 15px;
+    margin-right: 5px;
   }
 }
 
