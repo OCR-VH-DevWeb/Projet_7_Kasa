@@ -11,7 +11,11 @@ function Home() {
         <ul className="product">
           {Accomodations.map((Accomodation) => (
             <li key={Accomodation.id}>
-              <Card cover={Accomodation.cover} title={Accomodation.title} id={Accomodation.id} />
+              <Card
+                cover={Accomodation.cover}
+                title={Accomodation.title}
+                id={Accomodation.id}
+              />
             </li>
           ))}
         </ul>

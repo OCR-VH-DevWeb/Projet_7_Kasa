@@ -13,11 +13,3 @@ function Error404() {
 }
 
 export default Error404
-
-// {/* <div className="global">
-// < className="object">404</h1>
-// <h2 className="message">Oups! La page que vous demandez n'existe pas.</h2>
-// <Link className="linkback" to="/">
-// <h3 className="backhome">Retourner sur la page d'accueil</h3>
-// </Link>
-// </div> */}
