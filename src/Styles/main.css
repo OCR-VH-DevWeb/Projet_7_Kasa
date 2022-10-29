@@ -523,6 +523,14 @@ body, html {
     font-size: 18px;
   }
 }
+.global .message .mobile {
+  display: none;
+}
+@media screen and (max-width: 575px) {
+  .global .message .mobile {
+    display: inline;
+  }
+}
 .global .linkback {
   text-decoration: none;
   margin: 50px 0px;

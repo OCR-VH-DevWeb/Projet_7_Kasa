@@ -26,8 +26,12 @@
     @media screen and (max-width: map-get($breakpoints , mobile)) {
       text-align: center;
       font-size: 18px;
-      // width: 60%;
-      // white-space: break-spaces;
+    }
+    .mobile {
+      display: none;
+      @media screen and (max-width: map-get($breakpoints , mobile)) {
+        display: inline;
+      }
     }
   }
   .linkback {

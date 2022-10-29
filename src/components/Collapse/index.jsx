@@ -10,6 +10,9 @@ function Collapse({ category, content }) {
   const [isOpen, setIsOpen] = useState(null)
   //change le state
   const stateOpen = () => setIsOpen(!isOpen)
+  //vérifier si l'élément qu'on récupère est un tableau, si oui on le renvoie dans ul en faisant une map sur le content
+  //et renvoie le résultat dans li
+  //sinon le contenu s'affichera dans un p
   const contentProduct = Array.isArray(content) ? (
     <ul>
       {content.map((element) => (
